@@ -1,0 +1,690 @@
+/* ==========================================================================
+   RecruiterPage.css — CampusConnect 3.0 Recruiter Workspace (Talentry UI)
+   ========================================================================== */
+
+.recruiter-page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* 1. Header & Title */
+.recruiter-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.recruiter-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 800px;
+}
+
+.company-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.recruiter-role-pill {
+  font-size: 0.775rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--cc-purple);
+  background-color: var(--cc-purple-subtle);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(128, 100, 162, 0.3);
+}
+
+[data-theme='dark'] .recruiter-role-pill {
+  color: var(--cc-mint);
+  background-color: var(--cc-mint-subtle);
+  border-color: var(--cc-mint-border);
+}
+
+.recruiter-main-title {
+  font-size: 2.15rem;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: var(--cc-text-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.recruiter-subtitle {
+  font-size: 0.925rem;
+  color: var(--cc-text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.recruiter-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* 2. KPI Metric Cards */
+.kpi-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.kpi-card {
+  background-color: var(--cc-card-bg);
+  border: 1px solid var(--cc-border);
+  border-radius: 20px;
+  padding: 1.45rem;
+  box-shadow: var(--cc-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--cc-purple);
+}
+
+[data-theme='dark'] .kpi-card:hover {
+  border-color: var(--cc-mint);
+}
+
+.kpi-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kpi-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--cc-text-muted);
+}
+
+.kpi-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kpi-icon-wrap.violet {
+  background-color: var(--cc-purple-subtle);
+  color: var(--cc-purple);
+}
+
+.kpi-icon-wrap.mint {
+  background-color: var(--cc-mint-subtle);
+  color: var(--cc-mint);
+}
+
+.kpi-icon-wrap.amber {
+  background-color: var(--cc-warning-bg);
+  color: var(--cc-warning);
+}
+
+.kpi-value {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--cc-text-primary);
+  line-height: 1;
+  margin: 0.25rem 0;
+}
+
+.kpi-subtext {
+  font-size: 0.8rem;
+  color: var(--cc-text-secondary);
+}
+
+/* 3. Placement Drives Section */
+.drives-management-section,
+.pipeline-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.section-title-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.section-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--cc-text-primary);
+  margin: 0 0 0.25rem 0;
+}
+
+.section-subtitle {
+  font-size: 0.875rem;
+  color: var(--cc-text-secondary);
+  margin: 0;
+}
+
+/* Recruiter Drives Grid */
+.recruiter-drives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.recruiter-drive-card {
+  background-color: var(--cc-card-bg);
+  border: 1px solid var(--cc-border);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: var(--cc-shadow-sm);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.recruiter-drive-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--cc-purple);
+}
+
+[data-theme='dark'] .recruiter-drive-card:hover {
+  border-color: var(--cc-mint);
+}
+
+.drive-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-pill {
+  font-size: 0.725rem;
+  font-weight: 700;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.status-pill--open {
+  background-color: var(--cc-mint-subtle);
+  color: var(--cc-mint);
+  border: 1px solid var(--cc-mint-border);
+}
+
+.status-pill--closed {
+  background-color: var(--cc-error-bg);
+  color: var(--cc-error);
+  border: 1px solid var(--cc-error);
+}
+
+.drive-deadline-badge {
+  font-size: 0.775rem;
+  color: var(--cc-text-muted);
+}
+
+.recruiter-drive-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cc-text-primary);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.drive-specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  font-size: 0.825rem;
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.spec-label {
+  font-size: 0.725rem;
+  color: var(--cc-text-muted);
+  text-transform: uppercase;
+}
+
+.spec-val {
+  font-weight: 600;
+  color: var(--cc-text-primary);
+}
+
+.spec-val--salary {
+  color: var(--cc-mint);
+}
+
+[data-theme='light'] .spec-val--salary {
+  color: var(--cc-purple);
+}
+
+.spec-val--count {
+  color: var(--cc-mint);
+  font-weight: 700;
+}
+
+.recruiter-drive-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--cc-border-subtle);
+}
+
+.btn-delete-drive {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid var(--cc-error);
+  color: var(--cc-error);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-delete-drive:hover {
+  background-color: var(--cc-error-bg);
+}
+
+/* 4. Candidate Review Pipeline Toolbar */
+.pipeline-toolbar-card {
+  background-color: var(--cc-card-bg);
+  border: 1px solid var(--cc-border);
+  border-radius: 18px;
+  padding: 1rem 1.25rem;
+  box-shadow: var(--cc-shadow-sm);
+}
+
+.pipeline-toolbar-inputs {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.pipeline-search-wrap,
+.pipeline-select-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pipeline-search-wrap svg {
+  position: absolute;
+  left: 0.85rem;
+  color: var(--cc-text-muted);
+}
+
+.pipeline-input,
+.pipeline-select {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--cc-input-border);
+  background-color: var(--cc-input-bg-subtle);
+  color: var(--cc-text-primary);
+  font-family: inherit;
+  font-size: 0.885rem;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.pipeline-input {
+  padding-left: 2.35rem;
+}
+
+.pipeline-input:focus,
+.pipeline-select:focus {
+  border-color: var(--cc-border-focus);
+}
+
+/* Pipeline Table Cell Styles */
+.cell-candidate {
+  min-width: 200px;
+}
+
+.candidate-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.candidate-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--cc-purple), var(--cc-mint));
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.candidate-name {
+  font-weight: 700;
+  color: var(--cc-text-primary);
+}
+
+.candidate-email {
+  font-size: 0.785rem;
+  color: var(--cc-text-muted);
+}
+
+.cell-academic {
+  white-space: nowrap;
+}
+
+.academic-line {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.cgpa-badge {
+  font-size: 0.785rem;
+  font-weight: 700;
+  color: var(--cc-mint);
+}
+
+.branch-text {
+  font-size: 0.785rem;
+  color: var(--cc-text-secondary);
+}
+
+.cell-drive {
+  min-width: 180px;
+}
+
+.drive-applied-title {
+  font-weight: 600;
+  color: var(--cc-text-primary);
+}
+
+.drive-applied-meta {
+  font-size: 0.785rem;
+  color: var(--cc-text-muted);
+}
+
+.cell-status-action {
+  white-space: nowrap;
+}
+
+.status-dropdown-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-select {
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.775rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.status-select--applied {
+  background-color: var(--cc-purple-subtle);
+  color: var(--cc-purple);
+  border-color: rgba(128, 100, 162, 0.3);
+}
+
+.status-select--shortlisted {
+  background-color: var(--cc-warning-bg);
+  color: var(--cc-warning);
+  border-color: var(--cc-warning);
+}
+
+.status-select--selected {
+  background-color: var(--cc-mint-subtle);
+  color: var(--cc-mint);
+  border-color: var(--cc-mint-border);
+}
+
+.status-select--rejected {
+  background-color: var(--cc-error-bg);
+  color: var(--cc-error);
+  border-color: var(--cc-error);
+}
+
+.status-updating-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--cc-border);
+  border-top-color: var(--cc-mint);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+/* 5. Modal Dialogs */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 1.5rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-dialog {
+  background-color: var(--cc-card-bg);
+  border: 1px solid var(--cc-border);
+  border-radius: 22px;
+  width: 100%;
+  box-shadow: var(--cc-shadow-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-dialog--form {
+  max-width: 680px;
+}
+
+.modal-dialog--sm {
+  max-width: 440px;
+}
+
+.modal-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--cc-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--cc-text-primary);
+  margin: 0;
+}
+
+.modal-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--cc-text-muted);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-close-btn:hover {
+  color: var(--cc-text-primary);
+}
+
+.modal-error-banner {
+  margin: 1rem 1.5rem 0 1.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background-color: var(--cc-error-bg);
+  border: 1px solid var(--cc-error);
+  color: var(--cc-error);
+  font-size: 0.85rem;
+}
+
+.modal-form {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.modal-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.modal-grid-full {
+  grid-column: span 2;
+}
+
+.modal-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.modal-label {
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--cc-text-primary);
+}
+
+.required-star {
+  color: var(--cc-error);
+}
+
+.modal-input,
+.modal-select,
+.modal-textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--cc-input-border);
+  background-color: var(--cc-input-bg-subtle);
+  color: var(--cc-text-primary);
+  font-family: inherit;
+  font-size: 0.885rem;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.modal-input:focus,
+.modal-select:focus,
+.modal-textarea:focus {
+  border-color: var(--cc-border-focus);
+}
+
+.modal-textarea {
+  resize: vertical;
+}
+
+.modal-body-content {
+  padding: 1.5rem;
+  font-size: 0.925rem;
+  color: var(--cc-text-primary);
+  line-height: 1.5;
+}
+
+.modal-warning-text {
+  font-size: 0.825rem;
+  color: var(--cc-text-muted);
+  margin-top: 0.5rem;
+}
+
+.modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--cc-border-subtle);
+  background-color: var(--cc-surface-depth);
+}
+
+.btn-delete-confirm {
+  background-color: var(--cc-error);
+  color: #ffffff;
+  border-color: var(--cc-error);
+}
+
+.btn-delete-confirm:hover {
+  background-color: #dc2626;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .kpi-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pipeline-toolbar-inputs {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .kpi-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .recruiter-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .modal-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .modal-grid-full {
+    grid-column: span 1;
+  }
+}

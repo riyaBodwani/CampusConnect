@@ -1,0 +1,64 @@
+# ==============================================================================
+# CampusConnect Root .gitignore
+# Excludes environment files, credentials, build artifacts, and IDE configurations
+# ==============================================================================
+
+# Environment and Secret Files
+.env
+.env.local
+.env.*.local
+*.env
+application-local.properties
+application-*.local.properties
+*.local.properties
+secrets/
+*.pem
+*.key
+*.p12
+
+# Local Test Credential Payloads
+task8_*.json
+*credential*.json
+*secret*.json
+test_payload*.json
+
+# Backend Build & Runtime Artifacts
+target/
+*.jar
+*.war
+*.class
+HELP.md
+.mvn/wrapper/maven-wrapper.jar
+
+# Frontend Build & Dependency Artifacts
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE & Editor Configurations
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db

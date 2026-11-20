@@ -1,0 +1,341 @@
+/* ==========================================================================
+   CampusConnect 3.0 Design Tokens & Global Styles
+   Inspired by Talentry AI Job Search Platform & Modern SaaS Architecture
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* Primary Background & Surfaces (Pearl / Lavender Light Theme) */
+  --cc-bg: #F3F1F7;
+  --cc-card-bg: #FFFFFF;
+  --cc-surface-depth: #E7E1EE;
+  --cc-surface-elevated: #FFFFFF;
+  --cc-surface-hover: #F8F6FB;
+
+  /* Primary Typography */
+  --cc-text-primary: #27202E;
+  --cc-text-secondary: #6B5E77;
+  --cc-text-muted: #9386A0;
+
+  /* Accent Colors */
+  --cc-purple: #8064A2;              /* Violet accent */
+  --cc-purple-dark: #674c87;
+  --cc-purple-light: #efeaf4;
+  --cc-purple-subtle: rgba(128, 100, 162, 0.12);
+
+  --cc-mint: #80D39B;                /* Primary Mint accent */
+  --cc-mint-dark: #5fb87d;
+  --cc-mint-light: #e2f8ec;
+  --cc-mint-subtle: rgba(128, 211, 155, 0.16);
+  --cc-mint-border: rgba(128, 211, 155, 0.35);
+
+  /* Legacy & Neutral Aliases */
+  --cc-navy: #27202E;
+  --cc-navy-text: #27202E;
+  --cc-navy-muted: #6B5E77;
+  --cc-navy-subtle: #9386A0;
+  --cc-teal: #80D39B;
+  --cc-teal-dark: #5fb87d;
+  --cc-teal-light: #e2f8ec;
+  --cc-teal-subtle: rgba(128, 211, 155, 0.16);
+  --cc-teal-border: rgba(128, 211, 155, 0.35);
+
+  /* Borders & Dividers */
+  --cc-border: #DDD5E5;
+  --cc-border-subtle: #EBE5F0;
+  --cc-border-focus: #8064A2;
+
+  /* Inputs & Form Elements */
+  --cc-input-bg: #FFFFFF;
+  --cc-input-bg-subtle: #F7F5FA;
+  --cc-input-border: #DDD5E5;
+  --cc-input-border-focus: #8064A2;
+
+  /* Pill Buttons (Talentry Style: Dark Pill in Light Theme) */
+  --cc-pill-bg: #27202E;
+  --cc-pill-text: #FFFFFF;
+  --cc-pill-hover: #3E3448;
+
+  /* Semantic Feedback */
+  --cc-success: #10B981;
+  --cc-success-bg: rgba(16, 185, 129, 0.12);
+  --cc-warning: #F59E0B;
+  --cc-warning-bg: rgba(245, 158, 11, 0.12);
+  --cc-error: #EF4444;
+  --cc-error-bg: rgba(239, 68, 68, 0.12);
+  --cc-info: #6366F1;
+  --cc-info-bg: rgba(99, 102, 241, 0.12);
+
+  /* Shadows */
+  --cc-shadow-sm: 0 1px 3px rgba(39, 32, 46, 0.05);
+  --cc-shadow-md: 0 4px 14px rgba(39, 32, 46, 0.07);
+  --cc-shadow-lg: 0 10px 25px rgba(39, 32, 46, 0.08);
+  --cc-shadow-hover: 0 14px 28px rgba(128, 100, 162, 0.12);
+
+  /* Glassmorphism */
+  --cc-glass-bg: rgba(255, 255, 255, 0.88);
+  --cc-glass-border: rgba(221, 213, 229, 0.8);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* CampusConnect 3.0 Charcoal × Mint Palette */
+  --cc-bg: #101214;                 /* Main background: Neutral deep charcoal */
+  --cc-card-bg: #1C2124;            /* Cards, panels, sidebar surfaces */
+  --cc-card-depth: #252B2E;         /* Elevated surfaces & deeper containers */
+  --cc-surface: #1C2124;
+  --cc-surface-depth: #252B2E;
+  --cc-surface-elevated: #252B2E;
+  --cc-surface-hover: #21272B;
+
+  /* Borders & Dividers */
+  --cc-border: #343D40;             /* Clean neutral dark borders */
+  --cc-border-subtle: #252B2E;      /* Subtle inner dividers */
+  --cc-border-glow: rgba(133, 240, 189, 0.2);
+  --cc-border-focus: #85F0BD;
+
+  /* Primary Accent: Mint (#85F0BD) */
+  --cc-mint: #85F0BD;
+  --cc-mint-light: #A5F5CE;
+  --cc-mint-dark: #62D8A0;
+  --cc-mint-subtle: rgba(133, 240, 189, 0.12);
+  --cc-mint-border: rgba(133, 240, 189, 0.28);
+  --cc-mint-glow: 0 0 16px -2px rgba(133, 240, 189, 0.28);
+
+  /* Secondary Accent / Brand Nuances */
+  --cc-violet: #85F0BD;
+  --cc-violet-light: #A5F5CE;
+  --cc-violet-subtle: rgba(133, 240, 189, 0.1);
+  --cc-purple: #85F0BD;
+  --cc-purple-dark: #62D8A0;
+  --cc-purple-light: rgba(133, 240, 189, 0.12);
+  --cc-purple-subtle: rgba(133, 240, 189, 0.1);
+
+  --cc-teal: #85F0BD;
+  --cc-teal-dark: #62D8A0;
+  --cc-teal-light: #A5F5CE;
+  --cc-teal-subtle: rgba(133, 240, 189, 0.12);
+  --cc-teal-border: rgba(133, 240, 189, 0.28);
+
+  /* Typography */
+  --cc-text-primary: #F5F7F6;        /* Primary high-contrast text */
+  --cc-text-secondary: #B3BFC0;      /* Secondary descriptive text */
+  --cc-text-muted: #8B999B;          /* Muted labels & timestamps */
+
+  --cc-navy: #F5F7F6;
+  --cc-navy-text: #F5F7F6;
+  --cc-navy-muted: #B3BFC0;
+  --cc-navy-subtle: #8B999B;
+
+  /* Inputs & Form Surfaces */
+  --cc-input-bg: #101214;
+  --cc-input-bg-subtle: #1C2124;
+  --cc-input-border: #343D40;
+  --cc-input-border-focus: #85F0BD;
+
+  /* Pill Buttons (Talentry Style: Mint Pill in Dark Theme) */
+  --cc-pill-bg: #85F0BD;
+  --cc-pill-text: #101214;
+  --cc-pill-hover: #A5F5CE;
+
+  /* Semantic Feedback */
+  --cc-success: #85F0BD;
+  --cc-success-bg: rgba(133, 240, 189, 0.12);
+  --cc-warning: #F59E0B;
+  --cc-warning-bg: rgba(245, 158, 11, 0.12);
+  --cc-error: #F87171;
+  --cc-error-bg: rgba(248, 113, 113, 0.12);
+  --cc-info: #818CF8;
+  --cc-info-bg: rgba(129, 140, 248, 0.12);
+
+  /* Shadows */
+  --cc-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.45);
+  --cc-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.6);
+  --cc-shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.75);
+  --cc-shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.65);
+
+  /* Glassmorphism */
+  --cc-glass-bg: rgba(20, 24, 27, 0.88);
+  --cc-glass-border: rgba(52, 61, 64, 0.75);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--cc-text-primary);
+  background-color: var(--cc-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   Talentry Pill & Modern Button System
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.925rem;
+  padding: 0.65rem 1.35rem;
+  border-radius: 9999px; /* Pill shape */
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  line-height: 1.25;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: var(--cc-pill-bg);
+  color: var(--cc-pill-text);
+  border-color: transparent;
+  box-shadow: var(--cc-shadow-md);
+}
+
+.btn-primary:hover {
+  background-color: var(--cc-pill-hover);
+  color: var(--cc-pill-text);
+  box-shadow: var(--cc-shadow-hover);
+}
+
+.btn-secondary {
+  background-color: var(--cc-card-bg);
+  color: var(--cc-text-primary);
+  border-color: var(--cc-border);
+  box-shadow: var(--cc-shadow-sm);
+}
+
+.btn-secondary:hover {
+  background-color: var(--cc-surface-depth);
+  border-color: var(--cc-purple);
+  color: var(--cc-text-primary);
+}
+
+.btn-mint {
+  background-color: var(--cc-mint);
+  color: #101214;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(133, 240, 189, 0.25);
+}
+
+.btn-mint:hover {
+  background-color: var(--cc-mint-light);
+  color: #101214;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--cc-text-primary);
+  border: 1px solid var(--cc-border);
+}
+
+.btn-outline:hover {
+  background-color: var(--cc-surface-depth);
+  border-color: var(--cc-purple);
+}
+
+.btn-sm {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.825rem;
+  border-radius: 9999px;
+}
+
+.btn-lg {
+  padding: 0.85rem 1.85rem;
+  font-size: 1.05rem;
+  border-radius: 9999px;
+}
+
+/* ==========================================================================
+   Talentry Chips & Badges
+   ========================================================================== */
+.talentry-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.785rem;
+  font-weight: 500;
+  background-color: var(--cc-surface-depth);
+  color: var(--cc-text-secondary);
+  border: 1px solid var(--cc-border-subtle);
+  transition: all 0.15s ease;
+}
+
+.talentry-chip--mint {
+  background-color: var(--cc-mint-subtle);
+  color: var(--cc-mint);
+  border-color: var(--cc-mint-border);
+  font-weight: 600;
+}
+
+.talentry-chip--violet {
+  background-color: var(--cc-purple-subtle);
+  color: var(--cc-purple);
+  border-color: rgba(128, 100, 162, 0.3);
+  font-weight: 600;
+}
+
+/* Verified Badge with Mint Checkmark */
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: var(--cc-mint);
+  color: #101214;
+  font-size: 10px;
+  font-weight: 900;
+  flex-shrink: 0;
+  margin-left: 0.3rem;
+  box-shadow: 0 0 8px rgba(133, 240, 189, 0.3);
+}
+
+/* Scrollbar polish */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cc-border);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cc-purple);
+}

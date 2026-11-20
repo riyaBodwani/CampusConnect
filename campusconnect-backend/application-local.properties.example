@@ -1,0 +1,21 @@
+# ==============================================================================
+# CampusConnect Backend - Local Development Properties Example
+# Copy this file to 'application-local.properties' for local execution.
+# 'application-local.properties' is git-ignored and will not be committed.
+# ==============================================================================
+
+# Database Connection (PostgreSQL)
+DB_URL=jdbc:postgresql://localhost:5432/campusconnect
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
+
+# Spring Boot Property Bindings
+spring.datasource.url=jdbc:postgresql://localhost:5432/campusconnect
+spring.datasource.username=your_database_username
+spring.datasource.password=your_database_password
+
+# JWT Security Key
+JWT_SECRET=your_jwt_secret_key_minimum_256_bits_here
+JWT_EXPIRATION_MS=86400000
+jwt.secret=your_jwt_secret_key_minimum_256_bits_here
+jwt.expiration-ms=86400000

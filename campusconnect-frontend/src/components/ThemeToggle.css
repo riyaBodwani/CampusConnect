@@ -1,0 +1,48 @@
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background-color: var(--cc-input-bg, #ffffff);
+  border: 1px solid var(--cc-border, #e2e8f0);
+  color: var(--cc-text-secondary, #475569);
+  padding: 0.45rem;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  line-height: 1;
+}
+
+.theme-toggle-btn:has(.theme-toggle-label) {
+  padding: 0.45rem 0.65rem;
+}
+
+.theme-toggle-btn:hover {
+  color: var(--cc-purple, #8b5cf6);
+  border-color: var(--cc-purple, #8b5cf6);
+  background-color: var(--cc-purple-light, #f5f3ff);
+}
+
+.theme-toggle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: inherit;
+}
+
+[data-theme='dark'] .theme-toggle-btn {
+  background-color: #0f172a;
+  border-color: #24324d;
+  color: #cbd5e1;
+}
+
+[data-theme='dark'] .theme-toggle-btn:hover {
+  background-color: rgba(139, 92, 246, 0.18);
+  border-color: #a78bfa;
+  color: #f8fafc;
+}

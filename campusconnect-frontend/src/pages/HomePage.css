@@ -1,0 +1,541 @@
+/* ==========================================================================
+   HomePage.css — CampusConnect 3.0 Home & Talentry-Inspired Showcase
+   ========================================================================== */
+
+.home-page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* 1. Hero Section */
+.hero-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1rem 1rem 1rem;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: var(--cc-surface-depth);
+  border: 1px solid var(--cc-border);
+  color: var(--cc-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.hero-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--cc-mint);
+  box-shadow: 0 0 8px var(--cc-mint);
+}
+
+.hero-title {
+  font-size: 3.25rem;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  color: var(--cc-text-primary);
+  max-width: 860px;
+  margin: 0 0 1.25rem 0;
+}
+
+.text-violet {
+  color: var(--cc-purple);
+}
+
+.text-mint {
+  color: var(--cc-mint);
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: var(--cc-text-secondary);
+  line-height: 1.65;
+  max-width: 720px;
+  margin: 0 0 2.25rem 0;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+/* Hero Trust Highlights */
+.hero-highlights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--cc-border-subtle);
+  width: 100%;
+  max-width: 960px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--cc-text-primary);
+}
+
+.highlight-icon-wrap {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight-icon-wrap.mint {
+  background-color: var(--cc-mint-subtle);
+  color: var(--cc-mint);
+}
+
+.highlight-icon-wrap.violet {
+  background-color: var(--cc-purple-subtle);
+  color: var(--cc-purple);
+}
+
+/* 2. Large Horizontal Search & Filter Toolbar (Talentry Style) */
+.search-section {
+  width: 100%;
+}
+
+.talentry-toolbar-card {
+  background-color: var(--cc-card-bg);
+  border: 1px solid var(--cc-border);
+  border-radius: 24px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--cc-shadow-lg);
+  transition: all 0.25s ease;
+}
+
+.talentry-toolbar-form {
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 1fr 1fr auto;
+  gap: 1.25rem;
+  align-items: flex-end;
+}
+
+.toolbar-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.toolbar-label {
+  font-size: 0.775rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--cc-text-muted);
+}
+
+.toolbar-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toolbar-icon {
+  position: absolute;
+  left: 0.85rem;
+  color: var(--cc-text-muted);
+  pointer-events: none;
+}
+
+.toolbar-input,
+.toolbar-select {
+  width: 100%;
+  padding: 0.7rem 0.85rem 0.7rem 2.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--cc-input-border);
+  background-color: var(--cc-input-bg-subtle);
+  color: var(--cc-text-primary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.toolbar-input:focus,
+.toolbar-select:focus {
+  border-color: var(--cc-border-focus);
+  background-color: var(--cc-input-bg);
+}
+
+.toolbar-button-wrap {
+  display: flex;
+  align-items: flex-end;
+}
+
+.toolbar-search-btn {
+  padding: 0.75rem 1.6rem;
+  font-size: 0.95rem;
+  height: 44px;
+}
+
+/* Popular Tag Chips */
+.toolbar-chips-row {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--cc-border-subtle);
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.toolbar-chips-label {
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--cc-text-muted);
+  flex-shrink: 0;
+}
+
+.toolbar-chips-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.toolbar-chips-list .talentry-chip {
+  cursor: pointer;
+}
+
+.toolbar-chips-list .talentry-chip:hover {
+  background-color: var(--cc-purple);
+  color: #ffffff;
+  border-color: var(--cc-purple);
+}
+
+/* 3. Featured Placement Drives Grid */
+.featured-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.section-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--cc-text-primary);
+  margin: 0 0 0.35rem 0;
+}
+
+.section-title.text-center {
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: var(--cc-text-secondary);
+  margin: 0;
+}
+
+.section-subtitle.text-center {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Talentry Cards Grid */
+.talentry-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.talentry-card {
+  background-color: var(--cc-card-bg);
+  border: 1px solid var(--cc-border);
+  border-radius: 22px;
+  padding: 1.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  box-shadow: var(--cc-shadow-sm);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.talentry-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--cc-shadow-hover);
+  border-color: var(--cc-purple);
+}
+
+[data-theme='dark'] .talentry-card:hover {
+  border-color: var(--cc-mint);
+}
+
+.talentry-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.company-info-group {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.company-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.15rem;
+  flex-shrink: 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.company-name-row {
+  display: flex;
+  align-items: center;
+}
+
+.company-name {
+  font-size: 0.925rem;
+  font-weight: 700;
+  color: var(--cc-text-primary);
+}
+
+.post-date-text {
+  font-size: 0.775rem;
+  color: var(--cc-text-muted);
+  display: block;
+  margin-top: 0.15rem;
+}
+
+.bookmark-icon-btn {
+  background: transparent;
+  border: none;
+  color: var(--cc-text-muted);
+  cursor: pointer;
+  padding: 0.35rem;
+  border-radius: 8px;
+  transition: color 0.15s ease;
+}
+
+.bookmark-icon-btn:hover {
+  color: var(--cc-mint);
+}
+
+.talentry-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cc-text-primary);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.talentry-card-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.talentry-card-salary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.salary-label {
+  color: var(--cc-text-muted);
+  font-size: 0.825rem;
+  font-weight: 600;
+}
+
+.salary-amount {
+  font-weight: 700;
+  color: var(--cc-mint);
+  letter-spacing: -0.01em;
+}
+
+[data-theme='light'] .salary-amount {
+  color: var(--cc-purple);
+}
+
+.talentry-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--cc-border-subtle);
+}
+
+.applicant-metric {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.825rem;
+  color: var(--cc-text-secondary);
+  font-weight: 500;
+}
+
+/* 4. Workflow Section */
+.workflow-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.workflow-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.workflow-step-card {
+  background-color: var(--cc-card-bg);
+  border: 1px solid var(--cc-border);
+  border-radius: 20px;
+  padding: 1.85rem;
+  position: relative;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.workflow-step-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--cc-purple);
+}
+
+.step-number-badge {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--cc-mint);
+  margin-bottom: 1rem;
+}
+
+.step-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--cc-text-primary);
+  margin: 0 0 0.65rem 0;
+}
+
+.step-desc {
+  font-size: 0.875rem;
+  color: var(--cc-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 5. Pathways Section */
+.pathways-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.pathway-card {
+  background-color: var(--cc-card-bg);
+  border: 1px solid var(--cc-border);
+  border-radius: 24px;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--cc-shadow-md);
+}
+
+.pathway-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.pathway-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--cc-text-primary);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.pathway-desc {
+  font-size: 0.925rem;
+  color: var(--cc-text-secondary);
+  line-height: 1.6;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .talentry-toolbar-form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .toolbar-button-wrap {
+    grid-column: span 2;
+  }
+  .toolbar-search-btn {
+    width: 100%;
+  }
+  .workflow-steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .pathways-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.35rem;
+  }
+  .talentry-toolbar-form {
+    grid-template-columns: 1fr;
+  }
+  .toolbar-button-wrap {
+    grid-column: span 1;
+  }
+  .hero-highlights {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

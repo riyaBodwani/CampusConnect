@@ -1,0 +1,64 @@
+# ==============================================================================
+# CampusConnect Backend .gitignore
+# ==============================================================================
+
+# Local Git-Ignored Configuration & Secrets
+application-local.properties
+application-*.local.properties
+src/main/resources/application-local.properties
+src/main/resources/application-*.local.properties
+*.local.properties
+.env
+.env.local
+*.env
+secrets/
+
+# Local Test Credential Payloads
+task8_*.json
+*credential*.json
+*secret*.json
+test_payload*.json
+
+# Maven Build Artifacts
+HELP.md
+target/
+*.jar
+*.war
+*.class
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IDE & Editor Configurations
+### STS & Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+# Logs
+*.log
+logs/
+.DS_Store
+Thumbs.db
