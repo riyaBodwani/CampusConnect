@@ -1,4 +1,4 @@
-\# CampusConnect 3.0 🎓
+\# CampusConnect🎓
 
 
 
