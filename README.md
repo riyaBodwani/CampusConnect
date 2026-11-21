@@ -1,4 +1,3 @@
-
 # 🎓 CampusConnect — Campus Placement Management Portal
 CampusConnect is a full-stack Campus Placement Management System designed to simplify campus recruitment. It connects students and recruiters through a centralized platform for managing placement drives, job applications, and recruitment activities.
 
