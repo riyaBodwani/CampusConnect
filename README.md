@@ -27,7 +27,18 @@ The platform enables users to:
 - Manage recruitment activities efficiently
 
 ## 📸 Application Preview
-*Screenshots coming soon!*
+
+### 🏠 Home Page
+![Home Page](https://drive.google.com/file/d/1LmRqXvLveCl_B4YNSnjy--5bBwxUINeq/view?usp=sharing)
+
+### 👩‍🎓 Student Dashboard
+![Student Dashboard](https://drive.google.com/file/d/11w4ZMeJdxRDt1UNXjngTpLJkacwFouHt/view?usp=sharing)
+
+### 💼 Recruiter Dashboard
+![Recruiter Dashboard](https://drive.google.com/file/d/1njScjhzbPjN-6GWHx71_VUKww80LTNMN/view?usp=sharing)
+
+### 🔐 Login Page
+![Login Page](https://drive.google.com/file/d/19YWyP9F9ENz5hpQIKfvrW8j3CtLhOfcF/view)
 
 ## 📚 Learning Outcomes
 - Developed a full-stack application using React and Spring Boot
