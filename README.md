@@ -26,20 +26,6 @@ The platform enables users to:
 - Track and update application statuses
 - Manage recruitment activities efficiently
 
-## 📸 Application Preview
-
-### 🏠 Home Page
-![Home Page](<img width="1907" height="955" alt="Home-Page" src="https://github.com/user-attachments/assets/cf4194a2-5541-4a05-bafb-f4f27eb73b63" />)
-
-### 👩‍🎓 Student Dashboard
-![Student Dashboard](<img width="1892" height="967" alt="Student-dashboard" src="https://github.com/user-attachments/assets/458786c7-917a-4b9d-b675-9e3432b839df" />)
-
-### 💼 Recruiter Dashboard
-![Recruiter Dashboard](<img width="1908" height="963" alt="Recruiter dashboard" src="https://github.com/user-attachments/assets/c745be9e-ff35-4dd2-b519-9253203f567a" />)
-
-### 🔐 Login Page
-![Login Page](<img width="1898" height="947" alt="login-page" src="https://github.com/user-attachments/assets/417f93b0-09a9-49c8-aff4-7e2a407e562d" />)
-
 ## 📚 Learning Outcomes
 - Developed a full-stack application using React and Spring Boot
 - Implemented RESTful APIs and PostgreSQL integration
